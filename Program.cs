@@ -9,9 +9,9 @@ using MediatR;
 namespace DataIngestion.TestAssignment
 {
     class Program
-	{
-		static async Task Main(string[] args)
-		{
+    {
+        static async Task Main(string[] args)
+        {
             var serviceProvider = new ServiceCollection()
                               .AddHttpClient()
                               .AddElasticSearch(indexName: "albums")
@@ -23,5 +23,5 @@ namespace DataIngestion.TestAssignment
             var mediatr = serviceProvider.GetService<IMediator>();
             await new LinkFireConsole(mediatr).StartAsync(CancellationToken.None);
         }
-	}
+    }
 }
