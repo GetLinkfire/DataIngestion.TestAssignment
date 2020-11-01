@@ -21,7 +21,6 @@ namespace DataIngestion.TestAssignment
 
 
             var mediatr = serviceProvider.GetService<IMediator>();
-
             await new LinkFireConsole(mediatr).StartAsync(CancellationToken.None);
         }
 	}

@@ -18,7 +18,7 @@ namespace DataIngestion.TestAssignment.Extensions
             var client = new ElasticClient(settings);
             service.AddSingleton(client);
 
-            client.Indices.Create("albums", idx => idx.Map<LinkFireCollection>(m => m.AutoMap()));
+            client.Indices.Create(indexName, idx => idx.Map<LinkFireCollection>(m => m.AutoMap()));
             return service;
         }
     }
