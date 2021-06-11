@@ -4,8 +4,8 @@
 - The task is to store music data in Searchable database - ElasticSearch - 
 - In google drive folder https://drive.google.com/drive/folders/1RkUWkw9W0bijf7GOgV4ceiFppEpeXWGv, there are 4 compressed files representing 4 database tables extracted from relational database.
 - The files are (Artist - ArtistCollection - Collection - CollectionMatch)
-- We would like the solution to download, extract and read the files then inject Collection object into ElasticSearch index named albums
-- Album Object should be like this
+- We would like the solution to download, extract and read the files then inject Collection object into ElasticSearch index named collections
+- Collection Object should be like this
 
 ```
 {
