@@ -4,7 +4,8 @@
 - The task is to store music data in Searchable database - ElasticSearch - 
 - In google drive folder https://drive.google.com/drive/folders/1RkUWkw9W0bijf7GOgV4ceiFppEpeXWGv, there are 4 compressed files representing 4 database tables extracted from relational database.
 - The files are (Artist - ArtistCollection - Collection - CollectionMatch)
-- We would like the solution to download, extract and read the files then inject Collection object into ElasticSearch index named collections
+- Download and extract files manually.
+- We would like the solution to inject files data into ElasticSearch Collection index. (An index is like a ‘database' in a relational database.)
 - Collection Object should be like this
 
 ```
@@ -33,19 +34,15 @@
 - ElasticSearch http://localhost:9200/. it can be configured using docker image
 
 ### Requirments:
-- Use dotnet core Console application
-- If you stuck in downloading or extracting the files programatically, you can do it manually
-- You are allowed to use any technology you would like to use (AzureEventhub, EMQ, SqlServer, etc..)
-- Feel free to design your solution in one or more microservices/console apps
+- Use dotnet core Console application.
+- You are allowed to use any technology/third party you would like to use.
 - Solution should be testable, we are not looking for 100% code coverage but show examples of how you make parts unit-testable.
-- You are free to use third-party libraries
 
 We want to get a better understanding of:
 - The code you produce
-- How you go about architecting an extensible solution!
+- How you go about architecting an scalable solution!
 
 ### Notes:
-- Please don't make it more complex than necessary.
 - We would like to see a piece of code as you would do on your normal working day.
 - Please don't fork this project and create your own repository.
 - Please send us whatever you have done before the deadline even if it is an incompleted task.
